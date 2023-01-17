@@ -1,0 +1,9 @@
+cat /usr/share/dict/words | grep '^.$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)$/word(\1)./'> worddict.pl
+cat /usr/share/dict/words | grep '^..$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)$/word(\1,\2)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^...$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)$/word(\1,\2,\3)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^....$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)\(.\)$/word(\1,\2,\3,\4)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^.....$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)\(.\)\(.\)$/word(\1,\2,\3,\4,\5)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^......$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)$/word(\1,\2,\3,\4,\5,\6)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^.......$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)$/word(\1,\2,\3,\4,\5,\6,\7)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^........$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)$/word(\1,\2,\3,\4,\5,\6,\7,\8)./'>> worddict.pl
+cat /usr/share/dict/words | grep '^.........$' | tr '[:upper:]' '[:lower:]' |sed 's/^\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)\(.\)$/word(\1,\2,\3,\4,\5,\6,\7,\8,\9)./'>> worddict.pl
